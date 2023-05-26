@@ -12,6 +12,7 @@ function Orders() {
 }= useContext(store);
   const [orderitems, setorderitems] = useState([]);
   const navigate = useNavigate();
+  
   const getorderdetails = async () => {
     Axios.get(`https://ays-backend.vercel.app/ordersbyuser?uemail=${userdetails.email}`,{headers:{"authorization":`bearer ${localStorage.getItem("token")}`}}).then((res)=>{
         if(res.data.auth==true){
