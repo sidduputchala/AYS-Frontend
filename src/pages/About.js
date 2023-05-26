@@ -1,9 +1,5 @@
 import React from "react";
 import HomeNav from "../components/HomeNav.js";
-import member1 from "./Images/member1.jpeg";
-import member2 from "./Images/member2.jpg";
-import member3 from "./Images/member3.jpg";
-import member4 from "./Images/member4.jpg";
 import "./css/About.css";
 import Footer from "../components/Footer.js";
 
@@ -33,7 +29,7 @@ function About() {
           <div className="col-xl-3 col-sm-6 mb-5">
             <div className="bg-white rounded shadow-sm py-5 px-4">
               <img
-                src="https://bootstrapious.com/i/snippets/sn-team/teacher-4.jpg"
+                src="https://bootstrapious.com/i/snippets/sn-team/teacher-7.jpg"
                 alt=""
                 width="100"
                 className="img-fluid rounded-circle mb-3 img-thumbnail shadow-sm"
@@ -142,7 +138,7 @@ function About() {
           <div className="col-xl-3 col-sm-6 mb-5">
             <div className="bg-white rounded shadow-sm py-5 px-4">
               <img
-                src="https://bootstrapious.com/i/snippets/sn-team/teacher-7.jpg"
+                src="https://bootstrapious.com/i/snippets/sn-team/teacher-4.jpg"
                 alt=""
                 width="100"
                 className="img-fluid rounded-circle mb-3 img-thumbnail shadow-sm"
