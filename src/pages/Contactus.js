@@ -24,7 +24,7 @@ function Contactus() {
       toast.error("Message is required",{position: toast.POSITION.BOTTOM_RIGHT})
     }
     else{
-    Axios.post("https://ays-backend.vercel.app/messages",{...message},{headers:{"authorization":`bearer ${localStorage.getItem("token")}`}}).then((res)=>{
+    Axios.post("https://ays-backend-zmc3.onrender.com/messages",{...message},{headers:{"authorization":`bearer ${localStorage.getItem("token")}`}}).then((res)=>{
       if(res.data.auth){
         toast.success("Message sent successfully",{position: toast.POSITION.BOTTOM_RIGHT})
       }

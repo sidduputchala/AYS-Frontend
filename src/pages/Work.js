@@ -10,7 +10,7 @@ function Work() {
   const [orderitems, setOrderItems] = useState([]);
   const navigate = useNavigate();
   const getorderdetails = async () => {
-    const res = await Axios.get(`https://ays-backend.vercel.app/getorders?eemail=${empdetails.email}`,{headers:{"authorization":`bearer ${localStorage.getItem("token")}`}});
+    const res = await Axios.get(`https://ays-backend-zmc3.onrender.com/getorders?eemail=${empdetails.email}`,{headers:{"authorization":`bearer ${localStorage.getItem("token")}`}});
     if(res.data.auth){
       setOrderItems(res.data.orders);
       setRequestslist([]);

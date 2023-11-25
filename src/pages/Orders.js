@@ -14,7 +14,7 @@ function Orders() {
   const navigate = useNavigate();
   
   const getorderdetails = async () => {
-    Axios.get(`https://ays-backend.vercel.app/ordersbyuser?uemail=${userdetails.email}`,{headers:{"authorization":`bearer ${localStorage.getItem("token")}`}}).then((res)=>{
+    Axios.get(`https://ays-backend-zmc3.onrender.com/ordersbyuser?uemail=${userdetails.email}`,{headers:{"authorization":`bearer ${localStorage.getItem("token")}`}}).then((res)=>{
         if(res.data.auth==true){
           setorderitems(res.data.orders);
         }

@@ -76,8 +76,8 @@ function RequestDetails() {
                   
                       <button  class="btn btn-outline-success"type="submit" onClick={async (e) => {e.preventDefault();
                       
-                      const res = await Axios.post(`https://ays-backend.vercel.app/updateorder`,{orderid :item._id,cost: amount, status: 1},{headers:{"authorization":`bearer ${localStorage.getItem("token")}`}});
-                     const res1 = await Axios.post(`https://ays-backend.vercel.app/updateemployeebyemail`,{email:item.eemail,free:1},{headers:{"authorization":`bearer ${localStorage.getItem("token")}`}})
+                      const res = await Axios.post(`https://ays-backend-zmc3.onrender.com/updateorder`,{orderid :item._id,cost: amount, status: 1},{headers:{"authorization":`bearer ${localStorage.getItem("token")}`}});
+                     const res1 = await Axios.post(`https://ays-backend-zmc3.onrender.com/updateemployeebyemail`,{email:item.eemail,free:1},{headers:{"authorization":`bearer ${localStorage.getItem("token")}`}})
                           .then(() =>{navigate("/Employee_home");});}} >
                         Post
                       </button>

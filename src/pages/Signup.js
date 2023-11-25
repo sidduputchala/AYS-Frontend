@@ -76,7 +76,7 @@ function Signup() {
 
       setOtpDetails(user);
 
-      await Axios.get(`https://ays-backend.vercel.app/checkemail?email=${user.email}`).then((res) => {
+      await Axios.get(`https://ays-backend-zmc3.onrender.com/checkemail?email=${user.email}`).then((res) => {
         
         if (res.data.length === 0) {
           navigate("/checkotp");

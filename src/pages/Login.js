@@ -46,7 +46,7 @@ function Login() {
     } 
     else {
       Axios.get(
-        `https://ays-backend.vercel.app/login?email=${email}&password=${password}`
+        `https://ays-backend-zmc3.onrender.com/login?email=${email}&password=${password}`
       ).then((res) => {
 
 

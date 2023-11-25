@@ -125,7 +125,7 @@ const handleFileUpload = async (e) => {
         imgurl:imageurl,
       });
 
-      axios.post(`https://ays-backend.vercel.app/updateuser`, {
+      axios.post(`https://ays-backend-zmc3.onrender.com/updateuser`, {
         firstName: obj.firstname,
         lastName: obj.lastname,
         email: obj.email,

@@ -36,7 +36,7 @@ useEffect(() => {
     if(otp==sentotp){
         const {firstName,lastName,gender,profession,email,phone,address,city,state,pincode,password}=otpdetails_emp;
         alert("OTP verified");        
-        Axios.post(`https://ays-backend.vercel.app/empsignup`, {firstName,lastName,gender,profession,email,phone,address,city,state,pincode,password,free:"1"})
+        Axios.post(`https://ays-backend-zmc3.onrender.com/empsignup`, {firstName,lastName,gender,profession,email,phone,address,city,state,pincode,password,free:"1"})
           .then((res) => 
            {
             if(res.data!=null)

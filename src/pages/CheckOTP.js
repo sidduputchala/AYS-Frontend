@@ -37,7 +37,7 @@ useEffect(() => {
     if(otp==sentotp){
 
           const { firstName, lastName, email, phone, address, city, state, pincode, password } = otpdetails;
-          Axios.post(`https://ays-backend.vercel.app/signup`, {
+          Axios.post(`https://ays-backend-zmc3.onrender.com/signup`, {
             firstName,
             lastName,
             email,

@@ -35,7 +35,7 @@ function OrderDetails() {
            return
          }
       var data 
-     await Axios.post(`https://ays-backend.vercel.app/razorpay`, {amount:cost})
+     await Axios.post(`https://ays-backend-zmc3.onrender.com/razorpay`, {amount:cost})
       .then((res) => {
         data = res.data
       })
